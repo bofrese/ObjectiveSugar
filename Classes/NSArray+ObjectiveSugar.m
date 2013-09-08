@@ -151,6 +151,12 @@
     return [self sortedArrayUsingSelector:@selector(compare:)];
 }
 
+- (NSArray *)sortBy:(NSString *)sortKey {
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:sortKey ascending:YES];
+    return [self sortedArrayUsingDescriptors:@[sortDescriptor]];
+}
+
+
 - (NSArray *)reverse {
     return self.reverseObjectEnumerator.allObjects;
 }

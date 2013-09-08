@@ -21,5 +21,6 @@
 - (NSArray *)map:(id (^)(id object))block;
 
 - (NSArray *)sort;
+- (NSArray *)sortBy:(NSString *)sortKey ;
 
 @end

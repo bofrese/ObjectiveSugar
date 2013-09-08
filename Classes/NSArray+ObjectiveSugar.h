@@ -148,6 +148,12 @@
  */
 - (NSArray *)sort;
 
+/*!
+ Sort by the specified key
+ @return A sorted copy of the array
+ */
+- (NSArray *)sortBy:(NSString *)sortKey ;
+
 /**
  Alias for reverseObjectEnumerator.allObjects
  

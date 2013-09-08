@@ -76,4 +76,10 @@
     return [self sortedArrayUsingDescriptors:@[sortDescriptor]];
 }
 
+- (NSArray *)sortBy:(NSString *)sortKey {
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:sortKey ascending:YES];
+    return [self sortedArrayUsingDescriptors:@[sortDescriptor]];
+}
+
+
 @end
